@@ -50,13 +50,23 @@ footer {
   margin: 0;
 }
 
-.pin {
+.pin {  
   cursor: pointer;
-  border: 2px solid cornsilk;
-  width: 1.2rem;
-  height: 1.2rem;
-  background-color: coral;
-  border-radius: 1rem;
+  border-radius: 50%;
+  border: 8px solid orangered;
+  width: 8px;
+  height: 8px;
   text-indent: -9999px;
+  font-size: 0px;
+}
 
+.pin::after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  bottom: -30px;
+  left: -6px;
+  border: 10px solid transparent;
+  border-top: 17px solid orangered;
 }
