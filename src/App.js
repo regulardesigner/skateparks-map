@@ -37,7 +37,7 @@ class App extends React.Component {
           long: 2.4817129,
           infos: {
             name: 'Skateparks de Goussainville',
-            condition: 3
+            condition: 3,
           }
         },
         {
@@ -46,7 +46,16 @@ class App extends React.Component {
           long: 2.5099468,
           infos: {
             name: 'Skateparks de Louvres',
-            condition: 2
+            condition: 2,
+          }
+        },
+        {
+          id: 4,
+          lat: 48.8301638,
+          long: 2.5244394,
+          infos: {
+            name: 'Skatepaks de Brie sur Marne',
+            condition: 5,
           }
         }
       ]
