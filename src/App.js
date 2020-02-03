@@ -32,7 +32,7 @@ class App extends React.Component {
         },
         {
           id: 2,
-          lat: 49.0330887, 
+          lat: 49.0330887,
           long: 2.4817129,
           infos: {
             name: 'Skateparks de Goussainville',
@@ -51,9 +51,9 @@ class App extends React.Component {
       ]
     }
   }
-  
-  render () {
-    
+
+  render() {
+
     let currentState = this;
 
     const options = {
@@ -61,7 +61,7 @@ class App extends React.Component {
       timeout: 5000,
       maximumAge: 0
     };
-    
+
     function success(pos) {
       const crd = pos.coords;
       currentState.setState(
@@ -72,11 +72,11 @@ class App extends React.Component {
         }
       )
     }
-    
+
     function error(err) {
       console.warn(`ERREUR (${err.code}): ${err.message}`);
     }
-    
+
     navigator.geolocation.getCurrentPosition(success, error, options);
 
     const latitude = this.state.lat;
@@ -84,14 +84,12 @@ class App extends React.Component {
     const accuracy = this.state.accuracy;
     const { pins } = this.state;
 
-    console.log('PINS IN STATE:', pins);
-
     return (
       <div className="App">
         <header>
           <h1>Skateparks-map</h1>
         </header>
-        <Map center={[latitude, longitude]} zoom={14}>
+        <Map center={[49.087707, 2.505758]} zoom={14} onclick={(e) => { console.log('coucou') }}>
           {pins.map((pin, index) => (
             <Pin
               key={index}
@@ -102,7 +100,7 @@ class App extends React.Component {
           ))}
         </Map>
         <footer>
-            <small>lat:{latitude} long:{longitude} acc:{accuracy} meters.</small>
+          <small>lat:{latitude} long:{longitude} acc:{accuracy} meters.</small>
         </footer>
       </div>
     )

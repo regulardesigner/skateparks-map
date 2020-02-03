@@ -31,15 +31,28 @@ footer {
 .infos {
   z-index: 500;
   position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+  right: 0;
+  bottom: 0;
+  margin: 1rem;
   padding: 1rem;
   display: none;
-  max-width: 150rem;
+  width: calc(100vw - 4em);
+  height: calc(50vh - 3em);
   background-color: cornsilk;
   border-radius: .4rem;
   padding: .4rem 1rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, .45);
+}
+
+.infos-btn-close {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  padding: .6rem;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 .infos.show {
