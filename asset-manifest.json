@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/skateparks-map/static/css/main.124f52bd.chunk.css",
-    "main.js": "/skateparks-map/static/js/main.428bc775.chunk.js",
-    "main.js.map": "/skateparks-map/static/js/main.428bc775.chunk.js.map",
+    "main.js": "/skateparks-map/static/js/main.f06c0b89.chunk.js",
+    "main.js.map": "/skateparks-map/static/js/main.f06c0b89.chunk.js.map",
     "runtime-main.js": "/skateparks-map/static/js/runtime-main.8ced5b3d.js",
     "runtime-main.js.map": "/skateparks-map/static/js/runtime-main.8ced5b3d.js.map",
     "static/js/2.72412afb.chunk.js": "/skateparks-map/static/js/2.72412afb.chunk.js",
     "static/js/2.72412afb.chunk.js.map": "/skateparks-map/static/js/2.72412afb.chunk.js.map",
     "index.html": "/skateparks-map/index.html",
-    "precache-manifest.c6bda907e83cccab656d12d4b260fb83.js": "/skateparks-map/precache-manifest.c6bda907e83cccab656d12d4b260fb83.js",
+    "precache-manifest.fc8bcb3baaa7a7905f462786c1e5bc68.js": "/skateparks-map/precache-manifest.fc8bcb3baaa7a7905f462786c1e5bc68.js",
     "service-worker.js": "/skateparks-map/service-worker.js",
     "static/css/main.124f52bd.chunk.css.map": "/skateparks-map/static/css/main.124f52bd.chunk.css.map",
     "static/js/2.72412afb.chunk.js.LICENSE": "/skateparks-map/static/js/2.72412afb.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8ced5b3d.js",
     "static/js/2.72412afb.chunk.js",
     "static/css/main.124f52bd.chunk.css",
-    "static/js/main.428bc775.chunk.js"
+    "static/js/main.f06c0b89.chunk.js"
   ]
 }
