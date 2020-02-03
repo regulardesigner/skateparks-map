@@ -1,4 +1,5 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Map from 'pigeon-maps';
 import Pin from './Pin';
 
@@ -89,7 +90,7 @@ class App extends React.Component {
         <header>
           <h1>Skateparks-map</h1>
         </header>
-        <Map center={[49.087707, 2.505758]} zoom={14} onclick={(e) => { console.log('coucou') }}>
+        <Map center={[latitude, longitude]} zoom={14} onclick={(e) => { console.log('coucou') }}>
           {pins.map((pin, index) => (
             <Pin
               key={index}

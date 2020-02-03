@@ -1,18 +1,25 @@
 // == Initial State
 const initialState = {
-  message: 'Hello',
+  message: 'Hello from the store',
+  coords: {
+    lat: 0,
+    long: 0,
+  }
 };
 
 // == Types
-const DO_SOMETHING = 'DO_SOMETHING';
+const PUSH_USER_COORDS = 'PUSH_USER_COORDS';
 
 // == Reducer
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
-    case DO_SOMETHING:
+    case PUSH_USER_COORDS:
       return {
         ...state,
-        message: action.message,
+        coords: {
+          lat: action.lat,
+          long: action.long,
+        },
       };
 
     default:
@@ -21,10 +28,10 @@ const reducer = (state = initialState, action = {}) => {
 };
 
 // == Action Creators
-export const doSomething = message => ({
-  type: DO_SOMETHING,
-  message,
-});
+// export const doSomething = message => ({
+//   type: DO_SOMETHING,
+//   message,
+// });
 
 
 // == Selectors

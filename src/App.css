@@ -29,22 +29,24 @@ footer {
 }
 
 .infos {
+  transition: all ease 300ms;
   z-index: 500;
   position: absolute;
   right: 0;
-  bottom: 0;
-  margin: 1rem;
-  padding: 1rem;
-  display: none;
-  width: calc(100vw - 4em);
-  height: calc(50vh - 3em);
-  background-color: cornsilk;
+  bottom: calc(-100vh);
+  margin: 0rem;
+  padding: 0rem;
+  width: calc(100vw - 2rem);
+  height: calc(60vh - 3em);
+  background-color: #FFF;
   border-radius: .4rem;
   padding: .4rem 1rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, .45);
 }
 
 .infos-btn-close {
+  color: gray;
+  text-decoration: none;
   cursor: pointer;
   display: inline-block;
   position: absolute;
@@ -55,8 +57,18 @@ footer {
   font-weight: bold;
 }
 
+.btn {
+  display: block;
+  bottom: 1rem;
+  width: 100%;
+  background-color: green;
+  color: white;
+  height: 3rem;
+}
+
 .infos.show {
   display: block;
+  bottom: 0;
 }
 
 .infos h2 {
@@ -82,4 +94,26 @@ footer {
   left: -6px;
   border: 10px solid transparent;
   border-top: 17px solid orangered;
+}
+
+.pin.selected {
+  border-color: turquoise;
+}
+
+.pin.selected:after {
+  border-color: transparent;
+  border-top-color: turquoise;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .mobile-only {
+    display: block;
+  }
+  .browser-only {
+    display: none;
+  }
 }
