@@ -11,6 +11,8 @@ const Pin = (props) => {
     console.log('I M YOUR PIN BITCH :',event.target);
     // get the clicked pin
     const pin = event.target;
+    const pins = document.querySelectorAll('.selected');
+    pins.length && pins.forEach(pin => pin.classList.remove('selected'));
     //
     pin.classList.toggle('selected');
     // // // // // //
@@ -27,6 +29,8 @@ const Pin = (props) => {
   const closeInfoPanel = (event) => {
     event.preventDefault();
     event.target.parentNode.classList.toggle('show');
+    // toggle the selected class on the opened pin when closing the infos panel
+    event.target.parentNode.nextSibling.classList.toggle('selected');
   }
 
   return (
