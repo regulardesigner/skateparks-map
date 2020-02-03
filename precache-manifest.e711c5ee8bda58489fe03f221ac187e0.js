@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "71d99d9e432ff8b90f537740b3ee6ce8",
+    "revision": "9988732b04f5fc9c61a886ee20436daa",
     "url": "/skateparks-map/index.html"
   },
   {
-    "revision": "e0975fb71e628307ed57",
+    "revision": "c91b18e6625e724f9d18",
     "url": "/skateparks-map/static/css/main.4d6c9364.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/skateparks-map/static/js/2.b837a1c6.chunk.js.LICENSE"
   },
   {
-    "revision": "e0975fb71e628307ed57",
-    "url": "/skateparks-map/static/js/main.d36b7671.chunk.js"
+    "revision": "c91b18e6625e724f9d18",
+    "url": "/skateparks-map/static/js/main.055cb2ad.chunk.js"
   },
   {
     "revision": "b14740fc959210109e1b",
