@@ -10,15 +10,26 @@ header, footer {
 
 h1 {
   margin: 0;
+  text-align: left;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 header {
-  top:1rem;
-  left:1rem;
-  background-color: rgba(255, 255, 255, .8);
-  border-radius: 5rem;
+  background-color: rgba(255, 255, 255, .5);
   padding: .4rem 1rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .45);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .35);
+  width: calc(100vw - 2rem);
+  backdrop-filter: blur(3px);
+}
+
+.header-logo {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: block;
 }
 
 footer {

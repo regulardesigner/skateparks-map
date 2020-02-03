@@ -4,6 +4,7 @@ import Map from 'pigeon-maps';
 import Pin from './Pin';
 
 import './App.css';
+import logo from './logo.svg';
 
 class App extends React.Component {
   constructor() {
@@ -112,7 +113,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header>
-          <h1>Skateparks-map</h1>
+          <h1><img className='header-logo' src={logo} alt="logo skateparks map"/> Skateparks-map</h1>
         </header>
         <Map center={[latitude, longitude]} zoom={14} onclick={(e) => { console.log('coucou') }}>
           {pins.map((pin, index) => (
