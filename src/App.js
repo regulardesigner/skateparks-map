@@ -85,6 +85,21 @@ class App extends React.Component {
     const accuracy = this.state.accuracy;
     const { pins } = this.state;
 
+    // compute the distance in meters or kilometers between two POI.
+    const getDistanceBetween = (userLat, userLong, pinLat, pinLong) => {
+      const Radius = 6371; // for km (change this const to get miles)
+      const distanceLat = (userLat - pinLat) * Math.PI / 180;
+      const distanceLong = (userLong - pinLong) * Math.PI / 180;
+      const a = Math.sin(distanceLat/2) * Math.sin(distanceLat/2) +
+        Math.cos(userLat * Math.PI / 180 ) * Math.cos(pinLat * Math.PI / 180 ) *
+        Math.sin(distanceLong/2) * Math.sin(distanceLong/2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+      const distance = Radius * c;
+      if (distance>1) return Math.round(distance)+"km";
+      else if (distance<=1) return Math.round(distance*1000)+"m";
+      return distance;
+    }
+
     return (
       <div className="App">
         <header>
@@ -93,6 +108,7 @@ class App extends React.Component {
         <Map center={[latitude, longitude]} zoom={14} onclick={(e) => { console.log('coucou') }}>
           {pins.map((pin, index) => (
             <Pin
+              distance={getDistanceBetween(latitude,longitude,pin.lat, pin.long)}
               key={index}
               anchor={[pin.lat, pin.long]}
               infos={pin.infos}

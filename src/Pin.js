@@ -4,6 +4,7 @@ import './App.css';
 
 const Pin = (props) => {
   const coords = props.anchor;
+  const distance = props.distance;
   const { name, condition } = props.infos;
   const { top, left, id } = props;
 
@@ -38,23 +39,29 @@ const Pin = (props) => {
       <div className={`infos park-${id}`}>
         <a href="#close" className="infos-btn-close" onClick={closeInfoPanel}>&#10005;</a>
         <h2>{name}</h2>
-        <p>{condition}</p>
-        <a
-          title="open maps on mobile"
-          className="btn mobile-only"
-          href={`geo:${coords[0]},${coords[1]}`}
-          target="_blank" rel="noopener noreferrer"
-        >GO MOBILE</a>
-        <a 
-          title="open maps on browser"
-          className="btn browser-only"
-          href={`https://maps.google.com/?q=${coords[0]},${coords[1]}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >GO BROWSER</a>
+        <section>
+          <p>Ce skatepark est à <strong>{distance} en jetpack</strong> de votre position actuelle</p>
+          <p>Note : {condition}/5</p>
+          <p>Commentaire :</p>
+        </section>
+        <div className="actions">
+          <a
+            title="open maps on mobile"
+            className="btn mobile-only"
+            href={`geo:${coords[0]},${coords[1]}`}
+            target="_blank" rel="noopener noreferrer"
+          >GO MOBILE</a>
+          <a 
+            title="open maps on browser"
+            className="btn browser-only"
+            href={`https://maps.google.com/?q=${coords[0]},${coords[1]}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >GO BROWSER</a>
+        </div>
       </div>
       <div
-        title={name}
+        title={`${name} à ${distance} de votre position`}
         style={{ position: 'absolute', transform: `translate(${left}px, ${top}px)` }}
         className="pin"
         onClick={infosCssClass}

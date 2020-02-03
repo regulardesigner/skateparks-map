@@ -42,6 +42,9 @@ footer {
   border-radius: .4rem;
   padding: .4rem 1rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, .45);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .infos-btn-close {
@@ -67,7 +70,6 @@ footer {
 }
 
 .infos.show {
-  display: block;
   bottom: 0;
 }
 
@@ -97,12 +99,12 @@ footer {
 }
 
 .pin.selected {
-  border-color: turquoise;
+  border-color: blueviolet;
 }
 
 .pin.selected:after {
   border-color: transparent;
-  border-top-color: turquoise;
+  border-top-color: blueviolet;
 }
 
 .mobile-only {
