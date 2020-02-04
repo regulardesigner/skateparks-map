@@ -121,6 +121,7 @@ class App extends React.Component {
               distance={getDistanceBetween(latitude,longitude,pin.lat, pin.long)}
               key={index}
               anchor={[pin.lat, pin.long]}
+              offset={[12, 34]}
               infos={pin.infos}
               id={index}
             />
