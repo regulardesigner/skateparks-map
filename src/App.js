@@ -109,13 +109,26 @@ class App extends React.Component {
       else if (distance<=1) return Math.round(distance*1000)+"m";
       return distance;
     }
+    //
+    const providers = {
+      osm: (x, y, z) => {
+        const s = String.fromCharCode(97 + (x + y + z) % 3)
+        return `https://${s}.tile.openstreetmap.org/${z}/${x}/${y}.png`
+      },
+      wikimedia: (x, y, z, dpr) => {
+        return `https://maps.wikimedia.org/osm-intl/${z}/${x}/${y}${dpr >= 2 ? '@2x' : ''}.png`
+      },
+      stamen: (x, y, z, dpr) => {
+        return `https://stamen-tiles.a.ssl.fastly.net/terrain/${z}/${x}/${y}${dpr >= 2 ? '@2x' : ''}.jpg`
+      }
+    }
 
     return (
       <div className="App">
         <header>
           <h1><img className='header-logo' src={logo} alt="logo skateparks map"/> Skateparks-map</h1>
         </header>
-        <Map center={[latitude, longitude]} zoom={14} onclick={(e) => { console.log('coucou') }}>
+        <Map center={[latitude, longitude]} zoom={14} provider={providers['osm']} onclick={(e) => { console.log('coucou') }}>
           {pins.map((pin, index) => (
             <Pin
               distance={getDistanceBetween(latitude,longitude,pin.lat, pin.long)}
