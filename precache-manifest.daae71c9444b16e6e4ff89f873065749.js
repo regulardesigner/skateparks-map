@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce1bd0852ea8f8c3acec6f7e5c33f906",
+    "revision": "00328e81955066d9411399c129f50de6",
     "url": "/skateparks-map/index.html"
   },
   {
