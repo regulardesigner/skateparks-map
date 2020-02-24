@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/skateparks-map/static/css/main.941821e6.chunk.css",
-    "main.js": "/skateparks-map/static/js/main.495922ca.chunk.js",
-    "main.js.map": "/skateparks-map/static/js/main.495922ca.chunk.js.map",
+    "main.css": "/skateparks-map/static/css/main.027f772e.chunk.css",
+    "main.js": "/skateparks-map/static/js/main.24a4e311.chunk.js",
+    "main.js.map": "/skateparks-map/static/js/main.24a4e311.chunk.js.map",
     "runtime-main.js": "/skateparks-map/static/js/runtime-main.8ced5b3d.js",
     "runtime-main.js.map": "/skateparks-map/static/js/runtime-main.8ced5b3d.js.map",
     "static/js/2.a708fd53.chunk.js": "/skateparks-map/static/js/2.a708fd53.chunk.js",
     "static/js/2.a708fd53.chunk.js.map": "/skateparks-map/static/js/2.a708fd53.chunk.js.map",
     "index.html": "/skateparks-map/index.html",
-    "precache-manifest.5d2dc9dbcd42677374f48b91fc3cc980.js": "/skateparks-map/precache-manifest.5d2dc9dbcd42677374f48b91fc3cc980.js",
+    "precache-manifest.b00f20b6230115edf9c28636823dd3bf.js": "/skateparks-map/precache-manifest.b00f20b6230115edf9c28636823dd3bf.js",
     "service-worker.js": "/skateparks-map/service-worker.js",
-    "static/css/main.941821e6.chunk.css.map": "/skateparks-map/static/css/main.941821e6.chunk.css.map",
+    "static/css/main.027f772e.chunk.css.map": "/skateparks-map/static/css/main.027f772e.chunk.css.map",
     "static/js/2.a708fd53.chunk.js.LICENSE": "/skateparks-map/static/js/2.a708fd53.chunk.js.LICENSE",
     "static/media/logo.svg": "/skateparks-map/static/media/logo.aba790e0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8ced5b3d.js",
     "static/js/2.a708fd53.chunk.js",
-    "static/css/main.941821e6.chunk.css",
-    "static/js/main.495922ca.chunk.js"
+    "static/css/main.027f772e.chunk.css",
+    "static/js/main.24a4e311.chunk.js"
   ]
 }
