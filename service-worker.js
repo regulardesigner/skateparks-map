@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/skateparks-map/precache-manifest.5287e5b5a7e55d32fad2ed4d49f291af.js"
+  "/skateparks-map/precache-manifest.d642155336c3b3ddbc9d5b1fbb1f863b.js"
 );
 
 self.addEventListener('message', (event) => {
